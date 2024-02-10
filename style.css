@@ -1,35 +1,59 @@
-.main{
-    padding: 20px;
-    font-family: Arial;
-    box-shadow: 5px  5px 7px 5px #8888;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
 }
-
-.main h1{
-    font-size: 36px;
+h1,h2{
     text-align: center;
-    font-family: Arial;
-
 }
-
-input{
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    font-size: 20px;
-    padding: 12px 20px;
-    margin: 8px;
+.input-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.input-section label{
+    font-weight: bold;
+    margin-right: 10px;
+}
+.input-section input[type="number"], .input-section input[type="date"]{
+    padding: 5px;
+    margin-right: 10px;
+}
+.input-section button{
+    padding: 5px 10px;
+    background-color: rgb(238, 9, 9);
+    color:white;
     border: none;
-    border-bottom: 2px solid #764776;
-
+    border-radius: 4px;
+    cursor: pointer;
+}
+.expenses-list{
+    margin: 20px;
 }
 
-input[type=submit]{
-    font-family: Arial, Helvetica, sans-serif;
+table{
     width: 100%;
-    background-color: #764776;
-    border:none;
-    color: white;
-    padding: 16px 32px;
-    margin: 4px 2px;
-    border-radius: 10px;
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
 
+}
+th{
+    background-color: rgb(215, 222, 38);
+    color: rgb(12, 1, 1);
+}
+tfoot td{
+    font-weight: bold;
+}
+.delete-btn{
+    padding: 5px 10px;
+    background-color: rgb(238, 9, 9);
+    color:white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
